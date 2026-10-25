@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BEST লিমিটেড – সোলার এনার্জি, শুরু থেকে শেষ</title>
 <meta name="description" content="ব্রাইট ইলেকট্রিক সেভার টেকনোলজি লিমিটেড বাসাবাড়ি, কারখানা ও সরকারি প্রকল্পের জন্য সোলার সিস্টেম ডিজাইন, স্থাপন ও রক্ষণাবেক্ষণ করে।">
-<link rel="icon" href="../images/logo.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <link rel="alternate" hreflang="en" href="/">
 <link rel="alternate" hreflang="bn" href="/bn/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +22,84 @@ a{color:#C40000}a:hover{color:#8F0000}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #1F6FEB;outline-offset:3px}
 .flowline{display:block}
 @media (max-width:900px){.flowline{display:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<style id="best-motion">
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+@keyframes bestFadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes bestHeroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+/* sticky header */
+header{position:sticky;top:0;z-index:50;-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);transition:box-shadow .3s ease}
+header.scrolled{box-shadow:0 8px 28px rgba(28,36,48,.09)}
+/* nav links */
+.main-nav a:not(.btn-red){background-image:linear-gradient(#D50000,#D50000);background-repeat:no-repeat;background-position:0 calc(100% - 4px);background-size:0 2px;transition:background-size .3s ease,color .2s ease}
+.main-nav a:not(.btn-red):hover,.main-nav a.active{background-size:100% 2px}
+.main-nav a[lang]{background-position:24px calc(100% - 4px)}
+.main-nav a[lang]:hover{background-size:calc(100% - 24px) 2px}
+/* buttons */
+.btn-red{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.btn-red:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(213,0,0,.28);filter:brightness(.92)}
+.btn-red:active{transform:translateY(0);box-shadow:none}
+.btn-outline{transition:background-color .2s ease,color .2s ease,transform .2s ease}
+.btn-outline:hover{background-color:#1C2430 !important;color:#FFFFFF !important;transform:translateY(-2px)}
+/* images */
+.img-wrap{overflow:hidden}
+.img-wrap img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.hero-wrap{border-radius:6px}
+.hero-wrap img{animation:bestHeroZoom 1.8s cubic-bezier(.2,.7,.2,1) both}
+.proj-wrap{border-radius:6px}
+.card-lift{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}
+.card-lift:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(28,36,48,.12)}
+.card-lift:hover img,#projects figure:hover img{transform:scale(1.05)}
+/* hero entrance */
+.js .hero-in{opacity:0;animation:bestFadeUp .8s cubic-bezier(.2,.7,.2,1) forwards}
+/* scroll reveal */
+.js .reveal{opacity:0;transform:translateY(24px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .reveal.in.card-lift{transition:opacity .7s ease var(--d,0ms),transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}
+.js .flowline{transform:scaleX(0);transform-origin:left center}
+.js .flowline.in{transform:scaleX(1);transition:transform 1.4s cubic-bezier(.65,0,.35,1) .15s}
+/* flow nodes */
+#how-it-works li > div:first-child{transition:transform .3s ease,border-color .3s ease,color .3s ease,box-shadow .3s ease}
+#how-it-works li:hover > div:first-child{transform:scale(1.07);border-color:#D50000 !important;color:#D50000 !important;box-shadow:0 0 0 6px rgba(213,0,0,.08)}
+/* table + steps */
+#how-it-works tbody tr{transition:background-color .2s ease}
+#how-it-works tbody tr:hover{background-color:#F7F8FA}
+#process ol > li > span{transition:transform .3s ease}
+#process ol > li:hover > span{transform:translateX(4px)}
+/* band parallax */
+.band-img{transform:scale(1.14);will-change:transform}
+/* form */
+input:focus,select:focus,textarea:focus{outline:none;border-color:#1C2430 !important;box-shadow:0 0 0 3px rgba(28,36,48,.14)}
+input,select,textarea{transition:border-color .2s ease,box-shadow .2s ease}
+#survey-done:not([hidden]){animation:bestFadeUp .5s ease both}
+/* back to top */
+.to-top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:0;background:#1C2430;color:#FFFFFF;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 22px rgba(28,36,48,.25);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease,background-color .2s ease;z-index:60}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{background:#D50000}
+/* mobile menu */
+.menu-btn{display:none;align-items:center;gap:8px;font:inherit;font-weight:700;font-size:1rem;background:transparent;color:#1C2430;border:2px solid #1C2430;border-radius:4px;padding:8px 14px;min-height:44px;cursor:pointer}
+.menu-btn .bars{width:18px;height:12px;position:relative;display:inline-block}
+.menu-btn .bars::before,.menu-btn .bars::after,.menu-btn .bars i{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor;transition:transform .25s ease,opacity .2s ease}
+.menu-btn .bars::before{top:0}.menu-btn .bars i{top:5px}.menu-btn .bars::after{top:10px}
+header.open .menu-btn .bars::before{transform:translateY(5px) rotate(45deg)}
+header.open .menu-btn .bars i{opacity:0}
+header.open .menu-btn .bars::after{transform:translateY(-5px) rotate(-45deg)}
+@media (max-width:760px){
+  .menu-btn{display:inline-flex}
+  .main-nav{display:none !important;width:100%;flex-direction:column;align-items:stretch !important;gap:0 !important;padding-bottom:12px}
+  header.open .main-nav{display:flex !important;animation:bestFadeUp .3s ease both}
+  .main-nav a:not(.btn-red){padding:14px 0 !important;border-bottom:1px solid #DCE1E7;background-image:none}
+  .main-nav a[lang]{border-left:0 !important;padding-left:0 !important}
+  .main-nav a.btn-red{margin-top:14px;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .reveal,.js .hero-in{opacity:1 !important;transform:none !important}
+  .js .flowline{transform:none !important}
+  .band-img{transform:none !important}
+}
 </style>
 </head>
 <body>
@@ -362,6 +442,114 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
     fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(show).catch(function(){alert('দুঃখিত, অনুরোধটি পাঠানো যায়নি। অনুগ্রহ করে আমাদের ফোন করুন।');});
   });
   reset.addEventListener('click',function(){form.reset();done.hidden=true;wrap.hidden=false;});
+})();
+</script>
+<script id="best-motion-js">
+(function(){
+  var d=document, w=window;
+  var reduce=w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bn=(d.documentElement.lang||'').indexOf('bn')===0;
+  function $$(s,root){return Array.prototype.slice.call((root||d).querySelectorAll(s));}
+  function wrap(img,cls){var el=d.createElement('div');el.className='img-wrap '+(cls||'');img.parentNode.insertBefore(el,img);el.appendChild(img);return el;}
+
+  // Buttons
+  $$('a[style*="background: #D50000"],button[style*="background: #D50000"]').forEach(function(b){b.classList.add('btn-red');});
+  $$('a[style*="border: 2px solid #1C2430"],button[style*="border: 2px solid #1C2430"]').forEach(function(b){b.classList.add('btn-outline');});
+
+  // Images
+  $$('#services article > img').forEach(function(i){wrap(i);});
+  $$('#services article').forEach(function(a){a.classList.add('card-lift');});
+  $$('#projects figure > img').forEach(function(i){wrap(i,'proj-wrap');});
+  var hero=d.querySelector('#top img');
+  if(hero){wrap(hero,'hero-wrap');}
+
+  // Header, nav, mobile menu
+  var header=d.querySelector('header');
+  var nav=header && header.querySelector('nav');
+  if(nav){
+    nav.id='main-nav'; nav.classList.add('main-nav');
+    var btn=d.createElement('button');
+    btn.type='button'; btn.className='menu-btn';
+    btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls','main-nav');
+    btn.innerHTML='<span class="bars" aria-hidden="true"><i></i></span><span>'+(bn?'মেনু':'Menu')+'</span>';
+    nav.parentNode.insertBefore(btn,nav);
+    btn.addEventListener('click',function(){var open=header.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+    $$('a',nav).forEach(function(a){a.addEventListener('click',function(){header.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+  }
+
+  // Back to top
+  var top=d.createElement('button');
+  top.type='button'; top.className='to-top'; top.setAttribute('aria-label',bn?'উপরে যান':'Back to top');
+  top.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  top.addEventListener('click',function(){w.scrollTo({top:0,behavior:reduce?'auto':'smooth'});});
+  d.body.appendChild(top);
+
+  // Hero entrance
+  var heroText=d.querySelector('#top > div > div:first-child');
+  if(heroText){$$(':scope > *',heroText).forEach(function(el,i){el.classList.add('hero-in');el.style.animationDelay=(80+i*110)+'ms';});}
+  var heroCard=d.querySelector('#top > div > div:last-child > div[style*="position: absolute"]');
+  if(heroCard){heroCard.classList.add('hero-in');heroCard.style.animationDelay='650ms';}
+
+  // Scroll reveal groups: [selector, stagger ms]
+  var groups=[
+    ['#services h2, #services h2 + p',90],
+    ['#services article',130],
+    ['section[aria-label] p, section[aria-label] a',140],
+    ['#how-it-works h2, #how-it-works h2 + p',90],
+    ['#how-it-works ol > li',120],
+    ['#how-it-works > div > p, #how-it-works > div > h3, #how-it-works > div > div[style*="overflow-x"]',90],
+    ['#process h2, #process h2 + p, #process img',90],
+    ['#process ol > li',60],
+    ['section:not([id]):not([aria-label]) h2',0],
+    ['section:not([id]):not([aria-label]) h2 + div > div',130],
+    ['#projects h2',0],
+    ['#projects figure',130],
+    ['#contact h2, #contact h2 + p, #contact dl',90],
+    ['#contact > div > div:last-child',0],
+    ['footer > div > div > *',120]
+  ];
+  var items=[];
+  groups.forEach(function(g){
+    $$(g[0]).forEach(function(el,i){
+      if(el.classList.contains('reveal'))return;
+      el.classList.add('reveal');
+      el.style.setProperty('--d',Math.min(i*g[1],700)+'ms');
+      items.push(el);
+    });
+  });
+  var line=d.querySelector('.flowline'); if(line)items.push(line);
+  if(reduce||!('IntersectionObserver' in w)){items.forEach(function(el){el.classList.add('in');});}
+  else{
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.12});
+    items.forEach(function(el){io.observe(el);});
+  }
+
+  // Active nav link
+  var links={};
+  if(nav){$$('a[href^="#"]',nav).forEach(function(a){var id=a.getAttribute('href').slice(1);if(id&&id!=='contact'&&id!=='top')links[id]=a;});}
+  if('IntersectionObserver' in w){
+    var so=new IntersectionObserver(function(entries){entries.forEach(function(e){var a=links[e.target.id];if(!a)return;if(e.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.remove('active');});a.classList.add('active');}});},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(id){var s=d.getElementById(id);if(s)so.observe(s);});
+  }
+
+  // Band parallax
+  var band=d.querySelector('section[aria-label] > img');
+  if(band){band.classList.add('band-img');}
+
+  // Scroll handler
+  var ticking=false;
+  function onScroll(){
+    var y=w.scrollY||w.pageYOffset;
+    if(header)header.classList.toggle('scrolled',y>8);
+    top.classList.toggle('show',y>700);
+    if(band&&!reduce){
+      var r=band.parentNode.getBoundingClientRect(), vh=w.innerHeight;
+      if(r.bottom>0&&r.top<vh){var p=(r.top+r.height/2-vh/2)/(vh/2+r.height/2);band.style.transform='scale(1.14) translateY('+(p*-28).toFixed(1)+'px)';}
+    }
+    ticking=false;
+  }
+  w.addEventListener('scroll',function(){if(!ticking){ticking=true;w.requestAnimationFrame(onScroll);}},{passive:true});
+  onScroll();
 })();
 </script>
 </body>
